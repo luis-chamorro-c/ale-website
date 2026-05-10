@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  --cream: #e6dbce;
+  --paper: #fbf5e9;
+  --blue: #27446a;
+  --red: #e73052;
+  --aqua: #abd8db;
+
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: var(--blue);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--cream);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.signature-link {
+  position: absolute;
+  top: 54px;
+  left: clamp(1rem, 4.2vw, 3.8rem);
+  z-index: 2;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.signature-by {
+  font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+  font-weight: 300;
+}
+
+.signature-name {
+  min-width: 18rem;
+  border-bottom: 1px solid var(--blue);
+  font-family: Allura, "Brush Script MT", cursive;
+  font-size: clamp(2rem, 2.5vw, 2.25rem);
+  line-height: 0.95;
+  text-align: center;
+}
+
+.signature-link.home-signature {
+  position: static;
+  z-index: auto;
+}

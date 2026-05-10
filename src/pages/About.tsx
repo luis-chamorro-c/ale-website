@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../styles/about/about.css";
 import folderAbout from "../assets/about/folder-about.png";
 import norwayPhoto from "../assets/about/norway-photo.png";
 import headshot from "../assets/about/headshot.png";

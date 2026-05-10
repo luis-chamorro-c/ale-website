@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import folderAbout from "./assets/home/folder-about.png";
-import folderBrand from "./assets/home/folder-brand.png";
-import folderCpg from "./assets/home/folder-cpg.png";
-import folderEducational from "./assets/home/folder-educational.png";
-import folderMore from "./assets/home/folder-more.png";
+import Folder from "./components/Folder";
+import "./styles/app/app.css";
 
 export default function App() {
   return (
@@ -28,50 +25,43 @@ export default function App() {
         </div>
       </section>
 
-      <nav className="folder-nav" aria-label="Portfolio sections">
-        <div className="folder folder-about">
-          <img src={folderAbout} alt="" />
-          <Link className="folder-label-link" to="/about">
-            <span>about</span>
+      <div className="folder-nav" aria-label="Portfolio sections">
+        <Folder to="/about" label="about" folderClassName="folder-about" tabClassName="folder-tab-aqua" />
+        <Folder to="/cpg" label="professional cpg work" folderClassName="folder-cpg" tabClassName="folder-tab-blue"/>
+        {/* {/* <div className="folder folder-cpg">
+          <div className="folder-shell folder-shell-blue" />
+          <Link className="folder-label-link folder-tab folder-tab-blue" to="/cpg">
+            professional
+            <br />
+            cpg work
           </Link>
-        </div>
-        <div className="folder folder-cpg">
-          <img src={folderCpg} alt="" />
-          <Link className="folder-label-link" to="/cpg">
-            <span>
-              professional
-              <br />
-              cpg work
-            </span>
-          </Link>
-        </div>
-        <div className="folder folder-brand">
-          <img src={folderBrand} alt="" />
-          <Link className="folder-label-link" to="/brand-design">
-            <span>
-              case study:
-              <br />
-              brand design
-            </span>
+        </div> */}
+        {/* <div className="folder folder-brand">
+          <div className="folder-shell folder-shell-cream" />
+          <Link className="folder-label-link folder-tab folder-tab-cream" to="/brand-design">
+            case study:
+            <br />
+            brand design
           </Link>
         </div>
         <div className="folder folder-educational">
-          <img src={folderEducational} alt="" />
-          <Link className="folder-label-link" to="/educational-design">
-            <span>
-              educational
-              <br />
-              design
-            </span>
+          <div className="folder-shell folder-shell-gray" />
+          <Link
+            className="folder-label-link folder-tab folder-tab-gray"
+            to="/educational-design"
+          >
+            educational
+            <br />
+            design
           </Link>
         </div>
         <div className="folder folder-more">
-          <img src={folderMore} alt="" />
-          <Link className="folder-label-link" to="/more">
-            <span>more projects</span>
+          <div className="folder-shell folder-shell-light-blue" />
+          <Link className="folder-label-link folder-tab folder-tab-light-blue" to="/more">
+            more projects
           </Link>
-        </div>
-      </nav>
+        </div> */}
+      </div>
     </main>
   );
 }
