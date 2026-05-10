@@ -8,7 +8,7 @@
 
 .home-hero {
   display: flex;
-  flex-basis: 1 1 0;
+  flex: 1 1 0;
   flex-direction: column;
   padding: clamp(5rem, 9vw, 6.25rem) clamp(3.75rem, 5.8vw, 5.6rem) 2.4rem;
 }
@@ -66,82 +66,7 @@
 .folder-nav {
   position: relative;
   min-height: 500px;
-  flex: 2 1 0
-}
-
-.folder-label-container {
-  width: 100%;
-  height: 84px;
-}
-
-.folder-about .folder-label-link {
-  right: 80px;
-  width: 306px;
-}
-
-.folder-cpg {
-  top: 50px;
-  height: calc(100% - 50px);
-}
-
-.folder-cpg .folder-label-link {
-  right: 450px;
-  width: 306px;
-}
-
-.folder-brand {
-  top: 190px;
-  left: -5px;
-  width: max(101vw, 1451px);
-  height: 186px;
-  z-index: 30;
-}
-
-.folder-brand .folder-label-link {
-  top: -14px;
-  left: 108px;
-  width: 306px;
-  height: 108px;
-}
-
-.folder-educational {
-  top: 265px;
-  right: -141px;
-  width: 86.25vw;
-  min-width: 900px;
-  height: 150px;
-  z-index: 20;
-}
-
-.folder-educational .folder-label-link {
-  top: -20px;
-  left: min(46.5vw, 670px);
-  width: 306px;
-  height: 106px;
-}
-
-.folder-more {
-  top: 340px;
-  right: 0;
-  width: 100.8vw;
-  min-width: 1451px;
-  height: 160px;
-  z-index: 10;
-}
-
-.folder-more .folder-label-link {
-  top: -20px;
-  left: min(70.85vw, 1020px);
-  width: 306px;
-  height: 94px;
-}
-
-.folder-nav::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 42px;
-  background: #a9c4db;
+  flex: 2 1 0;
 }
 
 @media (max-width: 900px) {
@@ -173,67 +98,5 @@
   .folder-nav {
     min-height: 59vh;
     overflow: hidden;
-  }
-
-  .folder {
-    font-size: 1.5rem;
-  }
-
-  .folder:has(.folder-label-link:hover),
-  .folder:has(.folder-label-link:focus-visible) {
-    transform: translateY(-4px);
-  }
-
-  .folder-about .folder-label-link {
-    top: -8px;
-    left: 342px;
-    width: 206px;
-    height: 74px;
-  }
-
-  .folder-brand {
-    top: 112px;
-    left: -37px;
-    width: 914px;
-    min-width: 0;
-    height: 194px;
-  }
-
-  .folder-brand .folder-label-link {
-    top: 18px;
-    left: 7px;
-    width: 206px;
-    height: 90px;
-  }
-
-  .folder-educational {
-    top: 217px;
-    left: -177px;
-    right: auto;
-    width: 662px;
-    min-width: 0;
-    height: 145px;
-  }
-
-  .folder-educational .folder-label-link {
-    top: 8px;
-    left: 231px;
-    width: 206px;
-    height: 92px;
-  }
-
-  .folder-more {
-    top: 301px;
-    left: -348px;
-    width: 804px;
-    min-width: 0;
-    height: 134px;
-  }
-
-  .folder-more .folder-label-link {
-    top: 6px;
-    left: 478px;
-    width: 206px;
-    height: 76px;
   }
 }

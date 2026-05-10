@@ -28,39 +28,9 @@ export default function App() {
       <div className="folder-nav" aria-label="Portfolio sections">
         <Folder to="/about" label="about" folderClassName="folder-about" tabClassName="folder-tab-aqua" />
         <Folder to="/cpg" label="professional cpg work" folderClassName="folder-cpg" tabClassName="folder-tab-blue"/>
-        {/* {/* <div className="folder folder-cpg">
-          <div className="folder-shell folder-shell-blue" />
-          <Link className="folder-label-link folder-tab folder-tab-blue" to="/cpg">
-            professional
-            <br />
-            cpg work
-          </Link>
-        </div> */}
-        {/* <div className="folder folder-brand">
-          <div className="folder-shell folder-shell-cream" />
-          <Link className="folder-label-link folder-tab folder-tab-cream" to="/brand-design">
-            case study:
-            <br />
-            brand design
-          </Link>
-        </div>
-        <div className="folder folder-educational">
-          <div className="folder-shell folder-shell-gray" />
-          <Link
-            className="folder-label-link folder-tab folder-tab-gray"
-            to="/educational-design"
-          >
-            educational
-            <br />
-            design
-          </Link>
-        </div>
-        <div className="folder folder-more">
-          <div className="folder-shell folder-shell-light-blue" />
-          <Link className="folder-label-link folder-tab folder-tab-light-blue" to="/more">
-            more projects
-          </Link>
-        </div> */}
+        <Folder to="/brand-design" label="case study: brand design" folderClassName="folder-brand" tabClassName="folder-tab-cream"/>
+        <Folder to="/educational-design" label="educational design" folderClassName="folder-educational" tabClassName="folder-tab-gray"/>
+        <Folder to="/more" label="more projects" folderClassName="folder-more" tabClassName="folder-tab-light-blue"/>
       </div>
     </main>
   );
