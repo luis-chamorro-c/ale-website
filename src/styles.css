@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  --cream: #e6dbce;
+  --paper: #fbf5e9;
+  --blue: #27446a;
+  --red: #e73052;
+  --aqua: #abd8db;
+
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: var(--blue);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--cream);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.home-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.home-hero {
+  display: flex;
+  min-height: 52vh;
+  flex-direction: column;
+  justify-content: end;
+  padding: clamp(5rem, 9vw, 6.25rem) clamp(3.75rem, 5.8vw, 5.6rem) 2.4rem;
+}
+
+.home-hero h1 {
+  align-self: center;
+  width: max-content;
+  max-width: none;
+  margin: 0;
+  color: #e34b67;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(9rem, 15.55vw, 14rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-align: center;
+  transform: scaleX(0.72);
+  white-space: nowrap;
+}
+
+.home-meta {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: clamp(2rem, 7.4vw, 7.25rem);
+  align-items: center;
+  margin-top: 1.8rem;
+  color: var(--blue);
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  text-transform: lowercase;
+}
+
+.home-contact,
+.home-disciplines {
+  margin: 0;
+}
+
+.home-contact {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.home-contact a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.home-signature {
+  position: static;
+}
+
+.home-disciplines {
+  max-width: 22.5rem;
+  justify-self: end;
+}
+
+.folder-nav {
+  position: relative;
+  min-height: 48vh;
+}
+
+.folder {
+  position: absolute;
+  display: block;
+  color: var(--blue);
+  font-size: clamp(1.5rem, 1.95vw, 1.75rem);
+  font-weight: 700;
+  line-height: 0.92;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
+  pointer-events: none;
+}
+
+.folder:has(span:hover),
+.folder:focus-within {
+  filter: brightness(1.03);
+  transform: translateY(-8px);
+}
+
+.folder:focus-within {
+  outline: 3px solid var(--blue);
+  outline-offset: -8px;
+}
+
+.folder img {
+  display: block;
+  width: 100%;
+  pointer-events: none;
+}
+
+.folder span {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  pointer-events: auto;
+}
+
+.folder-about {
+  top: -42px;
+  right: -1px;
+  width: max(100vw, 1440px);
+  filter: drop-shadow(5px -5px 10px rgb(0 0 0 / 25%));
+}
+
+.folder-about span {
+  top: 3.25rem;
+  left: min(58vw, 835px);
+  width: 19rem;
+}
+
+.folder-cpg {
+  top: 21px;
+  left: -5px;
+  width: 114vw;
+  min-width: 1645px;
+  filter: drop-shadow(4px -7px 10px rgb(0 0 0 / 25%));
+}
+
+.folder-cpg img {
+  height: 37.2vw;
+  min-height: 538px;
+  object-fit: fill;
+}
+
+.folder-cpg span {
+  top: 2.65rem;
+  left: min(31.6vw, 455px);
+  width: 19rem;
+}
+
+.folder-brand {
+  top: 27px;
+  left: -5px;
+  width: max(101vw, 1451px);
+}
+
+.folder-brand span {
+  top: 6.15rem;
+  left: 6.25rem;
+  width: 19rem;
+}
+
+.folder-educational {
+  top: 118px;
+  right: -141px;
+  width: 86.25vw;
+  min-width: 900px;
+}
+
+.folder-educational span {
+  top: 7.3rem;
+  left: min(46.5vw, 670px);
+  width: 19rem;
+}
+
+.folder-more {
+  top: 210px;
+  right: 0;
+  width: 100.8vw;
+  min-width: 1451px;
+  filter: drop-shadow(2px -8px 8px rgb(0 0 0 / 25%));
+}
+
+.folder-more span {
+  top: 7.25rem;
+  left: min(70.85vw, 1020px);
+  width: 19rem;
+}
+
+.about-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.about-folder {
+  position: relative;
+  height: 199px;
+  background: var(--cream);
+}
+
+.signature-link {
+  position: absolute;
+  top: 54px;
+  left: clamp(1rem, 4.2vw, 3.8rem);
+  z-index: 2;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.signature-by {
+  font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+  font-weight: 300;
+}
+
+.signature-name {
+  min-width: 18rem;
+  border-bottom: 1px solid var(--blue);
+  font-family: Allura, "Brush Script MT", cursive;
+  font-size: clamp(2rem, 2.5vw, 2.25rem);
+  line-height: 0.95;
+  text-align: center;
+}
+
+.signature-link.home-signature {
+  position: static;
+  z-index: auto;
+}
+
+.about-folder-art {
+  position: absolute;
+  right: -18px;
+  bottom: -531px;
+  width: min(101.5vw, 1458px);
+  min-width: 980px;
+  filter: drop-shadow(0 -4px 5px rgb(0 0 0 / 25%));
+  pointer-events: none;
+}
+
+.about-folder-label {
+  position: absolute;
+  top: 52px;
+  left: min(70vw, 1014px);
+  z-index: 1;
+  width: 15rem;
+  transform: translateX(-50%);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-intro {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(22rem, 37.5rem) minmax(18rem, 1fr) 18rem;
+  min-height: 696px;
+  padding: 88px 51px 0 0;
+  background: var(--paper);
+}
+
+.about-norway-photo {
+  grid-row: span 3;
+  width: 100%;
+  height: 908px;
+  margin-top: -92px;
+  object-fit: cover;
+}
+
+.about-copy {
+  max-width: 23rem;
+  margin: 78px auto 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.16;
+  text-align: justify;
+  letter-spacing: -0.01em;
+}
+
+.about-copy p {
+  margin: 0 0 1rem;
+}
+
+.about-headshot {
+  width: min(20vw, 286px);
+  min-width: 12rem;
+  aspect-ratio: 286 / 307;
+  margin: 0 0 0 auto;
+  object-fit: cover;
+}
+
+.about-script {
+  margin: 0;
+  font-family: Allura, "Brush Script MT", cursive;
+  color: var(--blue);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.hello {
+  grid-column: 2 / 4;
+  align-self: end;
+  justify-self: center;
+  margin-top: 2.5rem;
+  font-size: clamp(2.1rem, 3.4vw, 3rem);
+  text-align: center;
+}
+
+.about-display {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  color: var(--red);
+  font-size: clamp(5.7rem, 15.5vw, 14rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.welcome {
+  grid-column: 2 / 4;
+  align-self: start;
+  justify-self: end;
+  margin-top: 1rem;
+}
+
+.education-band {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(22rem, 42rem) 1fr;
+  min-height: 844px;
+  background: var(--aqua);
+}
+
+.education-cards {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+  padding: 118px 0 0 47px;
+}
+
+.education-card {
+  width: min(35vw, 501px);
+  min-width: 24rem;
+  padding: 1.6rem 1.7rem 1.8rem;
+  background: var(--paper);
+  font-size: 1rem;
+  line-height: 1.18;
+}
+
+.education-card.school {
+  width: min(44vw, 629px);
+}
+
+.education-card h2 {
+  margin: 0 0 0.15rem;
+  border-bottom: 1px solid var(--blue);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.education-place {
+  margin-top: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.penn-class {
+  position: absolute;
+  left: 22rem;
+  top: 29.2rem;
+  z-index: 2;
+  width: min(48vw, 700px);
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  text-align: center;
+}
+
+.about-penn-photo {
+  width: 100%;
+  height: 844px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.experience-section {
+  padding: 72px clamp(1.5rem, 4vw, 5.8rem) 0;
+  background: var(--paper);
+}
+
+.experience-section .about-display {
+  text-align: center;
+}
+
+.roles-heading,
+.tools-heading,
+.personal-heading {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.roles-heading {
+  margin-top: 70px;
+}
+
+.role {
+  margin-top: 3.2rem;
+}
+
+.role-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.role h3,
+.role p {
+  margin: 0;
+}
+
+.role h3 {
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem);
+  line-height: 1.1;
+}
+
+.role-heading p {
+  margin-top: 0.2rem;
+  font-size: clamp(1.25rem, 1.95vw, 1.75rem);
+  font-style: italic;
+}
+
+.role time {
+  flex: 0 0 auto;
+  font-family: Allura, "Brush Script MT", cursive;
+  font-size: clamp(1.7rem, 2.3vw, 2rem);
+  white-space: nowrap;
+}
+
+.role ul {
+  margin: 1.3rem 0 0;
+  padding-left: 1.5rem;
+  font-size: clamp(1.1rem, 1.65vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.08;
+}
+
+.role li {
+  margin-bottom: 0.35rem;
+}
+
+.skills-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+  padding: 90px clamp(1rem, 3vw, 2.75rem) 0;
+  background: var(--paper);
+}
+
+.tools-heading {
+  position: absolute;
+  top: 32px;
+  left: clamp(1rem, 3vw, 2.75rem);
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(8.5rem, 1fr));
+  gap: 2.2rem clamp(1.5rem, 5vw, 4.8rem);
+  max-width: 70rem;
+}
+
+.tool-card {
+  margin: 0;
+  text-align: center;
+}
+
+.tool-card img {
+  width: 100%;
+  max-width: 14.7rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.tool-card figcaption {
+  margin-top: 0.45rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.skills-title {
+  align-self: end;
+  margin-bottom: -0.08em;
+}
+
+.personal-section {
+  display: grid;
+  gap: 2.1rem;
+  padding: 48px clamp(1.5rem, 4vw, 5.8rem) 78px;
+  background: var(--paper);
+}
+
+.language-grid,
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.language-grid strong,
+.hobby-grid strong {
+  display: block;
+  font-size: clamp(1.15rem, 2.2vw, 2rem);
+}
+
+.language-grid span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: clamp(1rem, 1.9vw, 1.75rem);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.hobby-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-footer {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.about-footer-art {
+  position: absolute;
+  left: -9px;
+  top: -433px;
+  width: min(101.5vw, 1458px);
+  min-width: 980px;
+  transform: scaleY(-1);
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+}
+
+.about-footer a {
+  position: absolute;
+  left: clamp(1.5rem, 11vw, 8rem);
+  bottom: 55px;
+  z-index: 1;
+  border-bottom: 1px solid var(--blue);
+  color: var(--blue);
+  font-family: Allura, "Brush Script MT", cursive;
+  font-size: clamp(2rem, 2.6vw, 2.25rem);
+  line-height: 0.95;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    min-height: 41vh;
+    justify-content: center;
+    padding: 2.5rem 1.4rem 1.5rem;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(5.6rem, 24vw, 7.5rem);
+    line-height: 0.88;
+    transform: none;
+    white-space: normal;
+  }
+
+  .home-meta {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    justify-items: center;
+    margin-top: 1.6rem;
+  }
+
+  .home-contact,
+  .home-disciplines {
+    display: none;
+  }
+
+  .folder-nav {
+    min-height: 59vh;
+    overflow: hidden;
+  }
+
+  .folder {
+    font-size: 1.5rem;
+  }
+
+  .folder:has(span:hover),
+  .folder:focus-within {
+    transform: translateY(-4px);
+  }
+
+  .folder-about {
+    top: -62px;
+    left: -231px;
+    width: 761px;
+    min-width: 0;
+  }
+
+  .folder-about span {
+    top: 5.65rem;
+    left: 342px;
+  }
+
+  .folder-cpg {
+    top: 53px;
+    left: -125px;
+    width: 811px;
+    min-width: 0;
+  }
+
+  .folder-cpg img {
+    height: 310px;
+  }
+
+  .folder-cpg span {
+    top: 3.65rem;
+    left: 126px;
+  }
+
+  .folder-cpg span br:first-child {
+    display: none;
+  }
+
+  .folder-brand {
+    top: 112px;
+    left: -37px;
+    width: 914px;
+    min-width: 0;
+  }
+
+  .folder-brand span {
+    top: 5.3rem;
+    left: 7px;
+  }
+
+  .folder-brand span::first-line {
+    font-size: 0;
+  }
+
+  .folder-educational {
+    top: 217px;
+    left: -177px;
+    right: auto;
+    width: 662px;
+    min-width: 0;
+  }
+
+  .folder-educational span {
+    top: 2.25rem;
+    left: 231px;
+  }
+
+  .folder-more {
+    top: 301px;
+    left: -348px;
+    width: 804px;
+    min-width: 0;
+  }
+
+  .folder-more span {
+    top: 2.75rem;
+    left: 478px;
+  }
+
+  .about-folder {
+    height: 144px;
+  }
+
+  .signature-link {
+    top: 24px;
+  }
+
+  .signature-name {
+    min-width: 14rem;
+  }
+
+  .about-folder-art {
+    right: auto;
+    left: -34rem;
+    bottom: -258px;
+    width: 950px;
+    min-width: 0;
+  }
+
+  .about-folder-label {
+    top: 66px;
+    left: 76%;
+    font-size: 1.5rem;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    padding: 0 0 2rem;
+  }
+
+  .about-norway-photo,
+  .about-penn-photo {
+    height: auto;
+    margin: 0;
+  }
+
+  .about-copy,
+  .about-headshot,
+  .hello,
+  .welcome {
+    grid-column: auto;
+  }
+
+  .about-copy {
+    max-width: none;
+    margin: 2rem;
+  }
+
+  .about-headshot {
+    justify-self: center;
+    width: 13rem;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .hello,
+  .welcome {
+    justify-self: center;
+  }
+
+  .education-band {
+    grid-template-columns: 1fr;
+  }
+
+  .education-cards {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .education-card,
+  .education-card.school {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .penn-class {
+    position: static;
+    width: auto;
+    margin: 0 2rem 2rem;
+  }
+
+  .role-heading {
+    display: block;
+  }
+
+  .role time {
+    display: block;
+    margin-top: 0.3rem;
+  }
+
+  .skills-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-grid {
+    grid-template-columns: repeat(2, minmax(7rem, 1fr));
+  }
+
+  .skills-title {
+    justify-self: end;
+  }
+
+  .language-grid,
+  .hobby-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .signature-link {
+    gap: 0.45rem;
+  }
+
+  .signature-name {
+    min-width: 12rem;
+    font-size: 1.85rem;
+  }
+
+  .about-copy {
+    margin: 1.5rem;
+  }
+
+  .experience-section,
+  .personal-section {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .tool-grid {
+    gap: 1.4rem 1rem;
+  }
+}
