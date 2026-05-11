@@ -2,6 +2,11 @@ import Folder from "../components/Folder";
 import SignatureLink from "../shared/SignatureLink";
 import "../styles/educational-design/educational-design.css";
 import wave from "../assets/educational-design/wavy-lines.png";
+import harvestKirbyCucumber from '../assets/educational-design/harvest-kirby-cucumber.png';
+import harvestMelonRunner from '../assets/educational-design/harvest-melon-runner.png';
+import harvestCaterpillar from '../assets/educational-design/harvest-characters-bubble.png';
+import FiftyPlusSection from "../components/educational-design/FiftyPlusSection";
+import HarvestAboutSection from "../components/educational-design/HarvestAboutSection";
 
 const DescriptionBox = ({ title, subtitle }: { title: string; subtitle: string}) => {
   return (
@@ -54,8 +59,24 @@ export default function EducationalDesign() {
       <div className="hg-outer-wrapper">
         <div className="hg-middle-wrapper">
           <div className="hg-inner-wrapper">
-            <div className="hg-wave-container"><img src={wave}/></div>
-            <div className="hg-bottom-wave-container"/>
+            <div className="hg-wave-container">
+              <div
+                className="hg-wave-bg"
+                style={{ backgroundImage: `url(${wave})` }}
+                role="img"
+                aria-label="Decorative wavy background"
+              >
+                <img className="harvestKirbyCucumber" src={harvestKirbyCucumber}/>
+                <img className="harvestMelonRunner" src={harvestMelonRunner}/>
+                <div className="hg-third-row"> 
+                  <FiftyPlusSection/>
+                  <img className="harvest-characters-bubble" src={harvestCaterpillar}/>
+                </div>
+              </div>
+            </div>
+            <div className="hg-bottom-wave-container"> 
+              <HarvestAboutSection/>
+            </div>
           </div>
         </div>
       </div>
