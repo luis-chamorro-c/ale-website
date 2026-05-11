@@ -1,5 +1,5 @@
 .home-page {
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background: var(--cream);
   display: flex;
@@ -65,13 +65,11 @@
 
 .folder-nav {
   position: relative;
-  min-height: 500px;
   flex: 2 1 0;
 }
 
 @media (max-width: 900px) {
   .home-hero {
-    min-height: 41vh;
     justify-content: center;
     padding: 2.5rem 1.4rem 1.5rem;
   }
@@ -96,7 +94,6 @@
   }
 
   .folder-nav {
-    min-height: 59vh;
     overflow: hidden;
   }
 }
