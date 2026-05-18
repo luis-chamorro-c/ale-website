@@ -7,9 +7,14 @@ import harvestMelonRunner from '../assets/educational-design/harvest-melon-runne
 import harvestCaterpillar from '../assets/educational-design/harvest-characters-bubble.png';
 import harvestGhostbusterEggplant from '../assets/educational-design/harvest-ghostbuster-eggplant-card.png';
 import harvestCabbageHero from '../assets/educational-design/harvest-cabbage-hero.png'
+import harvestCardGridLeft from '../assets/educational-design/harvest-card-grid-left.png';
+import harvestCardGridCenter from '../assets/educational-design/harvest-card-grid-center.png';
+import harvestCardGridRight from '../assets/educational-design/harvest-card-grid-right.png';
+import harvestDragon from '../assets/educational-design/harvest-card-back-stack.png';
 import FiftyPlusSection from "../components/educational-design/FiftyPlusSection";
 import HarvestAboutSection from "../components/educational-design/HarvestAboutSection";
 import PokemonInspiredSection from "../components/educational-design/PokemonInspiredSection";
+import EducationalDivider from "../components/educational-design/EducationalDivider";
 
 const DescriptionBox = ({ title, subtitle }: { title: string; subtitle: string}) => {
   return (
@@ -91,6 +96,26 @@ export default function EducationalDesign() {
                   <div className="harvest-ghostbuster-label">Ghostbuster Eggplant</div>
                 </div>
               </div> 
+            </div>
+            <EducationalDivider dividerText="Trading Cards"/>
+            <div className="hg-trading-cards-section">
+              <div className="hg-trading-cards-rows"> 
+                <img src={harvestCardGridLeft}/>
+                <img src={harvestCardGridCenter}/>
+                <img src={harvestCardGridRight}/>
+              </div>
+              <div className="trading-cards-bottom-section">
+                <img src={harvestDragon}/>
+                <div> 
+                  Through intensive research and thoughtful design <br/>
+                  this deck not only <strong>entertains</strong> but also <strong>informs</strong>,<br/>
+                  Making healthy foods more appealing to young audiences.
+                </div>
+              </div>
+              <EducationalDivider dividerText=""/>
+              <div className="hg-purple-character-bg">
+                
+              </div>
             </div>
           </div>
         </div>

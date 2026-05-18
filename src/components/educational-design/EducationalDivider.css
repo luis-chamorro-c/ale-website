@@ -1,0 +1,37 @@
+.educational-divider {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 57px;
+  border: 2px solid #000;
+  background: #f6db40;
+}
+
+.educational-divider-center {
+  flex: 1 1 260px;
+  min-width: 180px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  background: #f06549;
+  font: 400 4rem Yellowtail, cursive;
+  text-align: center;
+  color: #B1D9E9;
+}
+
+.educational-divider-chips {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.educational-divider-chip {
+  width: 25px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #f493b2;
+  flex: 0 0 auto;
+}

@@ -201,3 +201,55 @@ img.harvestMelonRunner {
   margin-top: 40px;
   width: 300px;
 }
+
+.hg-trading-cards-rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+.hg-trading-cards-rows img {
+  min-width: 0;   
+  width: 100%;  
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+  max-width: 400px;
+}
+
+.trading-cards-bottom-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.trading-cards-bottom-section img {
+  margin-left: 30px;
+  width: 300px;
+  transform: scaleX(-1);
+}
+
+.trading-cards-bottom-section div {
+  background-color: #F5C002;
+  max-width: 700px;
+  min-width: 400px;
+  height: 150px;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+  margin-top: 100px;
+  border: 2px solid black;
+}
+
+.hg-purple-character-bg {
+  width: 100%;
+  background-color: #868CDF;
+}
