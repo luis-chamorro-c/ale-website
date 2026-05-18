@@ -5,8 +5,11 @@ import wave from "../assets/educational-design/wavy-lines.png";
 import harvestKirbyCucumber from '../assets/educational-design/harvest-kirby-cucumber.png';
 import harvestMelonRunner from '../assets/educational-design/harvest-melon-runner.png';
 import harvestCaterpillar from '../assets/educational-design/harvest-characters-bubble.png';
+import harvestGhostbusterEggplant from '../assets/educational-design/harvest-ghostbuster-eggplant-card.png';
+import harvestCabbageHero from '../assets/educational-design/harvest-cabbage-hero.png'
 import FiftyPlusSection from "../components/educational-design/FiftyPlusSection";
 import HarvestAboutSection from "../components/educational-design/HarvestAboutSection";
+import PokemonInspiredSection from "../components/educational-design/PokemonInspiredSection";
 
 const DescriptionBox = ({ title, subtitle }: { title: string; subtitle: string}) => {
   return (
@@ -74,8 +77,20 @@ export default function EducationalDesign() {
                 </div>
               </div>
             </div>
-            <div className="hg-bottom-wave-container"> 
-              <HarvestAboutSection/>
+            <div className="hg-bottom-wave-container">
+              <div className="hg-bottom-horizontal-wave-container">
+                <div>
+                  <HarvestAboutSection/>
+                  <div className="hg-pokemon-container">
+                    <img className="harvestCabbageHero" src={harvestCabbageHero}/>
+                    <PokemonInspiredSection/>
+                  </div>
+                </div>
+                <div className="harvest-ghostbuster-eggplant">
+                  <img className="harvestGhostBusterEggplant" src={harvestGhostbusterEggplant}/>
+                  <div className="harvest-ghostbuster-label">Ghostbuster Eggplant</div>
+                </div>
+              </div> 
             </div>
           </div>
         </div>

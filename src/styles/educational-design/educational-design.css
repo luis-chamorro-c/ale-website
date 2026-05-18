@@ -135,7 +135,41 @@ img.harvestMelonRunner {
 
 .hg-bottom-wave-container {
   background-color: #5EC7D9;
-  height: 400px;
+  height: 700px;
+}
+
+.hg-bottom-horizontal-wave-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.harvest-ghostbuster-eggplant {
+  margin-top: 40px;
+  width: 600px;
+  min-width: 400px;
+  flex-shrink: 1;
+}
+
+.harvestGhostBusterEggplant {
+  width: 100%;
+  height: auto;
+}
+
+.harvest-ghostbuster-label {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -80px;
+  color: black;
+}
+
+.harvestCabbageHero {
+  width: 400px;
+  margin-left: 50px;
+}
+
+.hg-pokemon-container {
+  display: flex;
 }
 
 .fifty-plus-section {
@@ -166,47 +200,4 @@ img.harvestMelonRunner {
 .harvest-characters-bubble {
   margin-top: 40px;
   width: 300px;
-}
-
-.harvest-about-section {
-  width: 650px;
-  height: 268px;
-  margin-left: 50px;
-}
-
-.harvest-about-title {
-  width: 245px;
-  margin: 0;
-  z-index: 10;
-  color: #f5c002;
-  font: 400 90px/1 Yellowtail, cursive;
-  text-shadow: -1px 2px 0 #1f3e55;
-}
-
-.harvest-about-frame {
-  width: 100%;
-  height: 192px;
-  border: 3px solid #000;
-  border-radius: 33px;
-  background: #66c8a9;
-}
-
-.harvest-about-box {
-  margin-top: 18px;
-  margin-left: 18px;
-  width: calc(100% - 36px);
-  height: 156px;
-  border: 3px solid #000;
-  border-radius: 24px;
-  background: #b1d9e9;
-  padding: 16px 16px;
-  box-sizing: border-box;
-  text-align: center;
-  font: 400 22px/1.02 "Open Sans", Arial, sans-serif;
-  letter-spacing: -0.24px;
-  color: #000;
-}
-
-.harvest-about-box b {
-  font-weight: 700;
 }

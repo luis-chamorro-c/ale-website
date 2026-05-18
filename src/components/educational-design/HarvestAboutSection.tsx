@@ -1,10 +1,8 @@
-type HarvestAboutSectionProps = {
-  className?: string;
-};
+import "./HarvestAboutSection.css";
 
-export default function HarvestAboutSection({ className = "" }: HarvestAboutSectionProps) {
+export default function HarvestAboutSection() {
   return (
-    <section className={`harvest-about-section ${className}`.trim()}>
+    <section className={'harvest-about-section'}>
       <p className="harvest-about-title">About</p>
       <div className="harvest-about-frame">
         <div className="harvest-about-box">

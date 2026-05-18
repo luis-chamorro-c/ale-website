@@ -1,11 +1,17 @@
-type PokemonInspiredSectionProps = {
-  className?: string;
-};
+import "./PokemonInspiredSection.css";
 
-export default function PokemonInspiredSection({ className = "" }: PokemonInspiredSectionProps) {
+export default function PokemonInspiredSection() {
   return (
-    <div className={`pokemon-inspired-section ${className}`.trim()}>
-      Inspired by <strong>Pokémon</strong> cards.
-    </div>
+    <section className="pokemon-inspired-section">
+      <div className="pokemon-inspired-container">
+        <div className="pokemon-inspired-top-pill" />
+        <p className="pokemon-inspired-text">
+          <span>Inspired by </span>
+          <strong>Pokémon</strong>
+          <span>cards.</span>
+        </p>
+      </div>
+      <div className="pokemon-inspired-shadow"/>
+    </section>
   );
 }
