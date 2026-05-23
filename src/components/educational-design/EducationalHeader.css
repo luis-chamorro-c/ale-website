@@ -12,9 +12,23 @@
   height: 250px;
 }
 
+.edu-header-main.left-aligned {
+  height: 150px;
+}
+
 .edu-header-description {
   flex: 1;
   padding: 50px;
+}
+
+.edu-header-description .edu-header-harvest-title {
+  text-align: start;
+}
+
+.left-aligned .edu-header-description {
+  padding-bottom: 0px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .edu-header-project-meta {
@@ -52,7 +66,6 @@
   font-weight: 400;
   font-size: 8rem;
   letter-spacing: -1.5px;
-  color: #f06549;
   text-align: end;
   line-height: 0.8;
 }

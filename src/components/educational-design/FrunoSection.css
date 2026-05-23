@@ -1,0 +1,39 @@
+.fruno-section {
+  width: 100%;
+  background-color: #2F82CA;
+}
+
+.fruno-outer-triangle {
+  z-index: 10;
+  position: absolute;
+  width: 100%;      
+  height: 300px;      
+  background-color: #0268C9;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.fruno-inner-triangle {
+  z-index: 11;
+  position: absolute;
+  width: 100%;      
+  height: 150px;      
+  background-color: #0154A4;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.meet-fruno-section {
+  height: 650px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.fruno-cards-container {
+  margin-left: 80px;
+}
+
+.fruno-cards-showcase-section {
+  height: 700px;
+}

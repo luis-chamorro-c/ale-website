@@ -1,0 +1,46 @@
+.fruno-divider {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  width: 100%;
+  height: 48px;
+}
+
+.fruno-divider-segment {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fruno-divider-orange {
+  background: #ff4919;
+}
+
+.fruno-divider-green {
+  background: #4dcc37;
+}
+
+.fruno-divider-yellow {
+  background: #ffa100;
+}
+
+.fruno-divider-purple {
+  background: #b84cc7;
+}
+
+.fruno-divider-stripe {
+  width: 100%;
+}
+
+.fruno-divider-stripe-orange {
+  height: 15px;
+  background: #ff744a;
+}
+
+.fruno-divider-stripe-green {
+  height: 14px;
+  background: #00ab00;
+}
+
+.fruno-divider-stripe-yellow {
+  height: 13px;
+  background: #ffd300;
+}

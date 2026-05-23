@@ -22,6 +22,7 @@ import HarvestAboutSection from "../components/educational-design/HarvestAboutSe
 import PokemonInspiredSection from "../components/educational-design/PokemonInspiredSection";
 import EducationalDivider from "../components/educational-design/EducationalDivider";
 import EducationalHeader from "../components/educational-design/EducationalHeader";
+import FrunoSection from "../components/educational-design/FrunoSection";
 
 const harvestExtraArtRow = [
   harvestExtraArt46,
@@ -36,7 +37,19 @@ export default function EducationalDesign() {
     <main className="edu-shell">
       <SignatureLink/>
       <Folder to="/educational-design" label="educational design" folderClassName="folder-educational-header" tabClassName="folder-tab-gray"/>
-      <EducationalHeader />
+      <div className="edu-header-container">
+        <EducationalHeader
+          description={
+            "For over a year , I worked as Studio Manager and Graphic Designer for the Participatory Action Design Studio at the University of Pennsylvania's Netter Center for Community Partnerships. In this role, I designed various educational materials for public schools in West Philadelphia. This section of my portfolio features two large projects I completed during this time."
+          }
+          titleValue="Harvest Games"
+          areasOfDesignValue="Graphic Design, Illustration"
+          dateValue="2024-2025"
+          toolsValue="Adobe InDesign, Procreate, Adobe Photoshop, Canva."
+          sectionTitle={"Harvest\u00A0\u00A0\u00A0Games"}
+          color={"#f06549"}
+        />
+      </div>
       <div className="hg-outer-wrapper">
         <div className="hg-middle-wrapper">
           <div className="hg-inner-wrapper">
@@ -110,6 +123,16 @@ export default function EducationalDesign() {
           </div>
         </div>
       </div>
+      <EducationalHeader
+        titleValue="Fruno"
+        areasOfDesignValue="Graphic Design, Illustration"
+        dateValue="2024-2025"
+        toolsValue="Adobe InDesign, Procreate, Adobe Photoshop."
+        sectionTitle={"Fruno"}
+        color="#0154A4"
+        titleAlign="left"
+      />
+      <FrunoSection/>
     </main>
   );
 }

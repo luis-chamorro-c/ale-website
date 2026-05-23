@@ -5,6 +5,17 @@ type EducationalHeaderBoxProps = {
   subtitle: string;
 };
 
+type EducationalHeaderProps = {
+  description?: string;
+  titleValue: string;
+  areasOfDesignValue: string;
+  dateValue: string;
+  toolsValue: string;
+  sectionTitle: string;
+  titleAlign?: string;
+  color: string;
+};
+
 function EducationalHeaderBox({ title, subtitle }: EducationalHeaderBoxProps) {
   return (
     <div className="edu-header-box">
@@ -14,33 +25,42 @@ function EducationalHeaderBox({ title, subtitle }: EducationalHeaderBoxProps) {
   );
 }
 
-function EducationalHeaderTitle() {
+function EducationalHeaderTitle({ title, color }: { title: string, color: string }) {
+  const styles = { color };
   return (
-    <div className="edu-header-harvest-title-wrap">
-      <h1 className="edu-header-harvest-title">Harvest&nbsp;&nbsp;&nbsp;Games</h1>
+    <div className={`edu-header-harvest-title-wrap`}>
+      <h1 className="edu-header-harvest-title" style={styles}>{title}</h1>
     </div>
   );
 }
 
-export default function EducationalHeader() {
+export default function EducationalHeader({
+  description,
+  titleValue,
+  areasOfDesignValue,
+  dateValue,
+  toolsValue,
+  sectionTitle,
+  titleAlign,
+  color,
+}: EducationalHeaderProps) {
+  const isLeftAligned = titleAlign?.toLowerCase() === 'left';
+  const headerTitle = <EducationalHeaderTitle title={sectionTitle} color={color}/>;
+  const leftAlignClassName = isLeftAligned ? 'left-aligned' : null;
   return (
-    <div className="edu-header-container">
-      <div className="edu-header-main">
-        <div className="edu-header-description">
-          For over a year , I worked as Studio Manager and Graphic Designer for the Participatory Action Design
-          Studio at the University of Pennsylvania's Netter Center for Community Partnerships. In this role, I
-          designed various educational materials for public schools in West Philadelphia. This section of my
-          portfolio features two large projects I completed during this time.
+    <div className={`edu-header-main ${leftAlignClassName}`}>
+      <div className="edu-header-description">
+        {description}
+        {isLeftAligned ? headerTitle : null}
+      </div>
+      <div className="edu-header-project-meta">
+        <div className="edu-header-boxes">
+          <EducationalHeaderBox title="Title" subtitle={titleValue} />
+          <EducationalHeaderBox title="Areas of Design" subtitle={areasOfDesignValue} />
+          <EducationalHeaderBox title="Date" subtitle={dateValue} />
+          <EducationalHeaderBox title="Tools" subtitle={toolsValue} />
         </div>
-        <div className="edu-header-project-meta">
-          <div className="edu-header-boxes">
-            <EducationalHeaderBox title="Title" subtitle="Harvest Games" />
-            <EducationalHeaderBox title="Areas of Design" subtitle="Graphic Design, Illustration" />
-            <EducationalHeaderBox title="Date" subtitle="2024-2025" />
-            <EducationalHeaderBox title="Tools" subtitle="Adobe InDesign, Procreate, Adobe Photoshop, Canva." />
-          </div>
-          <EducationalHeaderTitle />
-        </div>
+        {isLeftAligned ? null : headerTitle}
       </div>
     </div>
   );
