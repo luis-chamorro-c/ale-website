@@ -2,65 +2,6 @@
   background: #e6dbce;
 }
 
-.header-container {
-  position: relative;
-  width: 100%;
-  margin-top: 200px;
-  z-index: 20;
-}
-
-.harvest-games-header {
-  background-color: #FBF5E9;
-  display: flex;
-  font-size: 1rem;
-  height: 250px;
-}
-
-.harvest-games-title-wrapper {
-  margin-right: 40px;
-}
-
-.harvest-games-title {
-  margin: 0;
-  font-family: "Instrument Serif", Georgia, serif;
-  font-weight: 400;
-  font-size: 8rem;
-  letter-spacing: -1.5px;
-  color: #f06549;
-  text-align: end;
-  line-height: 0.8;
-}
-
-.description {
-  flex: 1;
-  padding: 50px;
-}
-
-.description-boxes {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  margin-top: 60px;
-  justify-content: center;
-}
-
-.description-box {
-  min-width: 100px;
-  max-width: 200px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.description-box .title {
-  font-weight: 1000
-}
-
-.project-description-container {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-}
-
 .folder-educational-header {
   right: 0px;
   top: 60px;
@@ -73,14 +14,14 @@
 .hg-outer-wrapper {
   position: relative;
   background-color: #f06549;
-  height: 3300px;
+  height: auto;
   z-index: 20;
   padding: 50px;
 }
 
 .hg-middle-wrapper {
   background-color: #F6DB40;
-  height: 3200px;
+  height: auto;
   border-radius: 60px;
   border: 2px solid black;
   padding: 50px;
@@ -88,7 +29,7 @@
 
 .hg-inner-wrapper {
   background-color: #3eb7cc;
-  height: 3100px;
+  height: auto;
   border-radius: 60px;
   border: 2px solid black;
 }
@@ -252,4 +193,66 @@ img.harvestMelonRunner {
 .hg-purple-character-bg {
   width: 100%;
   background-color: #868CDF;
+  padding: clamp(1rem, 2.6vw, 2rem) clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.hg-purple-character-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(0.4rem, 1.5vw, 1rem);
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.hg-purple-character-slot {
+  width: clamp(140px, 16vw, 220px);
+  height: clamp(180px, 20vw, 280px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hg-purple-character-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hg-light-purple-character-bg {
+  background-color: #93A0DA;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.hg-cards-fan-container img {
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  position: absolute;
+  background-color: #5EC7D9;
+  width: 375px;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.info-card-bottom {
+  bottom: 300px;
+  left: 150px;
+  text-align: center;
+}
+
+.info-card-top {
+  margin-top: 60px;
+  right: 150px;
 }

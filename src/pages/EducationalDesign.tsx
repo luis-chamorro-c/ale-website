@@ -11,59 +11,32 @@ import harvestCardGridLeft from '../assets/educational-design/harvest-card-grid-
 import harvestCardGridCenter from '../assets/educational-design/harvest-card-grid-center.png';
 import harvestCardGridRight from '../assets/educational-design/harvest-card-grid-right.png';
 import harvestDragon from '../assets/educational-design/harvest-card-back-stack.png';
+import harvestExtraArt44 from '../assets/educational-design/harvest-extra-art-44.png';
+import harvestExtraArt45 from '../assets/educational-design/harvest-extra-art-45.png';
+import harvestExtraArt46 from '../assets/educational-design/harvest-extra-art-46.png';
+import harvestExtraArt47 from '../assets/educational-design/harvest-extra-art-47.png';
+import harvestExtraArt49 from '../assets/educational-design/harvest-extra-art-49.png';
+import harvestTradingCardsFan from '../assets/educational-design/harvest-trading-cards-fan-flattened.png';
 import FiftyPlusSection from "../components/educational-design/FiftyPlusSection";
 import HarvestAboutSection from "../components/educational-design/HarvestAboutSection";
 import PokemonInspiredSection from "../components/educational-design/PokemonInspiredSection";
 import EducationalDivider from "../components/educational-design/EducationalDivider";
+import EducationalHeader from "../components/educational-design/EducationalHeader";
 
-const DescriptionBox = ({ title, subtitle }: { title: string; subtitle: string}) => {
-  return (
-  <div className="description-box">
-    <div className="title">
-      {title}
-    </div>
-    <div className="subtitle">
-      {subtitle}
-    </div>
-  </div>
-  )
-}
-
-function HarvestGamesTitle() {
-  return <div className="harvest-games-title-wrapper">
-    <h1 className={`harvest-games-title`}>Harvest&nbsp;&nbsp;&nbsp;Games</h1>
-  </div>;
-}
-
-const Header = () => {
-  return (
-    <div className="header-container">
-      <div className="harvest-games-header">
-        <div className="description">
-          For over a year , I worked as Studio Manager and Graphic Designer for the Participatory Action Design Studio at the University of Pennsylvania's Netter Center for Community Partnerships. In this role, I designed various educational materials for public schools in West Philadelphia. This 
-section of my portfolio features two large projects I 
-completed during this time. 
-        </div>
-        <div className="project-description-container">
-          <div className="description-boxes">
-            <DescriptionBox title="Title" subtitle="Harvest Games"/>
-            <DescriptionBox title="Areas of Design" subtitle="Graphic Design, Illustration"/>
-            <DescriptionBox title="Date" subtitle="2024-2025"/>
-            <DescriptionBox title="Tools" subtitle="Adobe InDesign, Procreate, Adobe Photoshop, Canva."/>
-          </div>
-          <HarvestGamesTitle/>
-        </div>
-      </div>
-    </div>
-  )
-}
+const harvestExtraArtRow = [
+  harvestExtraArt46,
+  harvestExtraArt44,
+  harvestExtraArt47,
+  harvestExtraArt49,
+  harvestExtraArt45,
+];
 
 export default function EducationalDesign() {
   return (
     <main className="edu-shell">
       <SignatureLink/>
       <Folder to="/educational-design" label="educational design" folderClassName="folder-educational-header" tabClassName="folder-tab-gray"/>
-      <Header/>
+      <EducationalHeader />
       <div className="hg-outer-wrapper">
         <div className="hg-middle-wrapper">
           <div className="hg-inner-wrapper">
@@ -114,7 +87,24 @@ export default function EducationalDesign() {
               </div>
               <EducationalDivider dividerText=""/>
               <div className="hg-purple-character-bg">
-                
+                <div className="hg-purple-character-row">
+                  {harvestExtraArtRow.map((art) => (
+                    <div key={art} className="hg-purple-character-slot" aria-hidden="true">
+                      <img src={art} className="hg-purple-character-art" alt="" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="hg-light-purple-character-bg">
+                <div className="info-card info-card-bottom">
+                  Harvest game cards are playable and can be used for various games described on "Gameplay" cards.
+                </div>
+                <div className="hg-cards-fan-container">
+                  <img src={harvestTradingCardsFan}/>
+                </div>
+                <div className="info-card info-card-top">
+                  Harvest games applies the same character-based marketing style found in kids' snack brands to fruits and vegetables, making them more engaging to children.
+                </div>
               </div>
             </div>
           </div>

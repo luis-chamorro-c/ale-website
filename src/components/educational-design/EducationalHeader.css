@@ -1,0 +1,58 @@
+.edu-header-container {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+  z-index: 20;
+}
+
+.edu-header-main {
+  background-color: #fbf5e9;
+  display: flex;
+  font-size: 1rem;
+  height: 250px;
+}
+
+.edu-header-description {
+  flex: 1;
+  padding: 50px;
+}
+
+.edu-header-project-meta {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-header-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.edu-header-box {
+  min-width: 100px;
+  max-width: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.edu-header-box-title {
+  font-weight: 1000;
+}
+
+.edu-header-harvest-title-wrap {
+  margin-right: 40px;
+}
+
+.edu-header-harvest-title {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 8rem;
+  letter-spacing: -1.5px;
+  color: #f06549;
+  text-align: end;
+  line-height: 0.8;
+}
