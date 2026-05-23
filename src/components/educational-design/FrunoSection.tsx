@@ -2,6 +2,7 @@ import "./FrunoSection.css";
 import MeetFrunoBox from "./MeetFrunoBox";
 import frunoThreeCardsOverlay from '../../assets/educational-design/fruno-three-cards-overlay.png'
 import FrunoDivider from "./FrunoDivider";
+import FrunoCardsShowCase from "./FrunoCardsShowCase";
 
 export default function FrunoSection() {
   return (
@@ -15,7 +16,9 @@ export default function FrunoSection() {
         </div>
       </div>
       <FrunoDivider/>
-      <div className="fruno-cards-showcase-section"/>
+      <div className="fruno-cards-showcase-section">
+        <FrunoCardsShowCase/>
+      </div>
     </div>
   );
 }
