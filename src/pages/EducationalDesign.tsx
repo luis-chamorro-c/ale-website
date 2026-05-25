@@ -23,6 +23,7 @@ import PokemonInspiredSection from "../components/educational-design/PokemonInsp
 import EducationalDivider from "../components/educational-design/EducationalDivider";
 import EducationalHeader from "../components/educational-design/EducationalHeader";
 import FrunoSection from "../components/educational-design/FrunoSection";
+import DigitalArtSection from "../components/educational-design/DigitalArtSection";
 
 const harvestExtraArtRow = [
   harvestExtraArt46,
@@ -36,7 +37,7 @@ export default function EducationalDesign() {
   return (
     <main className="edu-shell">
       <SignatureLink/>
-      <Folder to="/educational-design" label="educational design" folderClassName="folder-educational-header" tabClassName="folder-tab-gray"/>
+      <Folder to="/more-projects" label="more projects" folderClassName="folder-more-header" tabClassName="folder-tab-light-blue"/>
       <div className="edu-header-container">
         <EducationalHeader
           description={
@@ -144,6 +145,7 @@ export default function EducationalDesign() {
         sectionTitle={"Digital Art"}
         color={"#122033"}
       />
+      <DigitalArtSection/>
     </main>
   );
 }

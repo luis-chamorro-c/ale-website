@@ -2,13 +2,13 @@
   background: #e6dbce;
 }
 
-.folder-educational-header {
+.folder-more-header {
   right: 0px;
   top: 60px;
 }
 
-.folder-educational-header .folder-label-link {
-  right: 300px;
+.folder-more-header .folder-label-link {
+  right: 50px;
 }
 
 .hg-outer-wrapper {
