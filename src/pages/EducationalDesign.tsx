@@ -133,6 +133,17 @@ export default function EducationalDesign() {
         titleAlign="left"
       />
       <FrunoSection/>
+      <EducationalHeader
+        description={
+          "This section of my portfolio features a collection of digital artwork and illustrations I have created over the years."
+        }
+        titleValue="N/A"
+        areasOfDesignValue="Illustration, Photo Manipulation"
+        dateValue="2018-2026"
+        toolsValue="Adobe Fresco, Procreate, Adobe Lightroom"
+        sectionTitle={"Digital Art"}
+        color={"#122033"}
+      />
     </main>
   );
 }

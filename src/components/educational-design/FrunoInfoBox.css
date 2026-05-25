@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
-.meet-fruno-shell {
+.fruno-info-box-shell {
   width: min(26.125rem, 100%);
 }
 
-.meet-fruno-tabs {
+.fruno-info-box-tabs {
   display: flex;
   align-items: stretch;
   gap: 0;
@@ -12,38 +12,38 @@
   height: 2.5625rem;
 }
 
-.meet-fruno-tab {
+.fruno-info-box-tab {
   display: block;
   height: 100%;
 }
 
-.meet-fruno-tab-purple {
+.fruno-info-box-tab-purple {
   width: 31.5789%;
   background: #b84cc7;
 }
 
-.meet-fruno-tab-orange {
+.fruno-info-box-tab-orange {
   width: 25.5981%;
   background: #ff4919;
 }
 
-.meet-fruno-tab-yellow {
+.fruno-info-box-tab-yellow {
   width: 23.9234%;
   background: #ffaf00;
 }
 
-.meet-fruno-tab-green {
+.fruno-info-box-tab-green {
   width: 18.8995%;
   background: #4ed335;
 }
 
-.meet-fruno-stack {
+.fruno-info-box-stack {
   position: relative;
   width: 100%;
   padding-bottom: 1.35rem;
 }
 
-.meet-fruno-shadow {
+.fruno-info-box-shadow {
   position: absolute;
   left: 0;
   right: 0;
@@ -54,7 +54,7 @@
   z-index: 0;
 }
 
-.meet-fruno-wrapper {
+.fruno-info-box-wrapper {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -70,7 +70,7 @@
   font-style: normal;
 }
 
-.meet-fruno-title {
+.fruno-info-box-title {
   margin: 0;
   font-family: "Apricot", "Yellowtail", "Brush Script MT", cursive;
   font-size: 3rem;
@@ -79,7 +79,7 @@
   letter-spacing: -0.03rem;
 }
 
-.meet-fruno-copy {
+.fruno-info-box-copy {
   margin: 1.2rem auto 0;
   max-width: 22.8125rem;
   color: #000;
@@ -91,20 +91,20 @@
 }
 
 @media (max-width: 640px) {
-  .meet-fruno-title {
+  .fruno-info-box-title {
     font-size: clamp(2.2rem, 12vw, 3rem);
   }
 
-  .meet-fruno-copy {
+  .fruno-info-box-copy {
     margin-top: 0.95rem;
     font-size: clamp(1.4rem, 8vw, 2rem);
   }
 
-  .meet-fruno-stack {
+  .fruno-info-box-stack {
     padding-bottom: 1.1rem;
   }
 
-  .meet-fruno-shadow {
+  .fruno-info-box-shadow {
     height: 2.65rem;
   }
 }

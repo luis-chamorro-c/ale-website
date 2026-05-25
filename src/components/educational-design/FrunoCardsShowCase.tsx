@@ -37,12 +37,12 @@ export default function FrunoCardsShowCase() {
       <InfoCircle firstLine="4 suits" secondLine="4 colors"/>
       <div className="fruno-cards-showcase-row">
         {rowA.map((card, index) => (
-          <img key={`a-${index + 1}`} className="fruno-cards-showcase-card" src={card} alt="" />
+          <img key={`a-${index}`} className="fruno-cards-showcase-card" src={card} loading="lazy" />
         ))}
       </div>
       <div className="fruno-cards-showcase-row">
         {rowB.map((card, index) => (
-          <img key={`b-${index + 1}`} className="fruno-cards-showcase-card" src={card} alt="" />
+          <img key={`b-${index}`} className="fruno-cards-showcase-card" src={card} loading="lazy"/>
         ))}
       </div>
     </section>
