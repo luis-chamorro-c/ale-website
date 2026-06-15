@@ -1,35 +1,79 @@
 # AGENTS.md
 
-## Figma MCP
-- Connected account: `luis.a.chamorro.c@gmail.com`
-- Starter-plan MCP limit encountered during implementation.
-- Successfully read nodes before limit:
-  - Homepage desktop: `375:322`
-  - Homepage mobile: `380:467`
-  - About page: `12:34`
-  - Educational design / Penn Netter Center: `26:131`
+## Layout Planning Communication
 
-## Figma Links
-- Design: `https://www.figma.com/design/125zQrHAeiGxMVrBCzvsA2/By-Alejandra?node-id=0-1&p=f&t=c8FSbGFO3KR7nlDV-0`
-- Prototype: `https://www.figma.com/proto/125zQrHAeiGxMVrBCzvsA2/By-Alejandra?node-id=1-2&p=f&viewport=-919%2C-1600%2C0.42&t=uM3ltSEMLts4X8re-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1`
+When the user asks how a section or page should be structured, explain it with a compact ASCII browser mockup that shows the elements in their intended visual positions.
 
-## Page Mapping
-- `/` -> Homepage
-- `/about` -> About
-- `/cpg` -> Professional CPG Work
-- `/brand-design` -> Case Study: Brand Design
-- `/educational-design` -> Educational Design
-- `/more` -> More Projects
-- `By: Alejandra Chamorro` should link to `/`
+Rules:
 
-## Current Scope
-- Implemented:
-  - Vite + React + TypeScript scaffold
-  - Routing setup
-  - `/about` page
-  - Homepage in progress (needs further visual correction)
-- Left to implement:
-  - `/cpg`
-  - `/brand-design`
-  - `/educational-design`
-  - `/more`
+- Prefer an ASCII mockup over a long prose explanation.
+- Show the page as a browser-like frame when useful.
+- Place each major DOM element where it would appear on screen.
+- Keep the mockup narrow enough to read in a terminal.
+- After the ASCII mockup, include a short DOM tree.
+- Do not drift into abstract layout theory when the user wants structure.
+- Do not produce wide, token-heavy tables unless the user explicitly asks for them.
+
+## Preferred Output Pattern
+
+1. ASCII browser mockup
+2. Short DOM tree
+3. One short note clarifying which visuals are background vs DOM, if relevant
+
+## Example Output
+
+```text
++----------------------------------------------------------------------------------+
+| by: Alejandra Chamorro                                          [brand design]   |
+|----------------------------------------------------------------------------------|
+|                                                                                  |
+|  /----------------------------------------------------------------------------\  |
+| /                                                                              \ |
+||                                                                                ||
+||  [ yibyo-band / indigo background ]                                            ||
+||                                                                                ||
+||   +------------------------+                         +----------------------+   ||
+||   |                        |                         |        YibYo         |   ||
+||   |   package art is       |                         | A case study in      |   ||
+||   |   part of background   |                         | brand design.        |   ||
+||   |   not DOM              |                         +----------------------+   ||
+||   |                        |                                                   ||
+||   |                        |                                                   ||
+||   |                        |        +-------------------+                      ||
+||   |                        |        |   Packaging       |                      ||
+||   |                        |        | mascot + text     |                      ||
+||   |                        |        +-------------------+                      ||
+||   |                        |                                                   ||
+||   |                        |   +-------------------+      +----------------+   ||
+||   |                        |   |   Description     |      |   Guidelines   |   ||
+||   |                        |   | mascot + text     |      | mascot + text  |   ||
+||   |                        |   +-------------------+      +----------------+   ||
+||   |                        |                                                   ||
+||   |                        |              +-------------------+                ||
+||   |                        |              |   Advertising     |                ||
+||   |                        |              | mascot + text     |                ||
+||   |                        |              +-------------------+                ||
+||                                                                                ||
+| \------------------------------------------------------------------------------/ |
+|  \----------------------------------------------------------------------------/  |
+|                                                                                  |
+|                                                         View More Projects       |
++----------------------------------------------------------------------------------+
+```
+
+```text
+brand-design-page
+├── SignatureLink
+├── Folder ("brand design")
+└── yibyo-section
+    ├── yibyo-band
+    │   ├── yibyo-title-block
+    │   ├── yibyo-callout-packaging
+    │   ├── yibyo-callout-description
+    │   ├── yibyo-callout-guidelines
+    │   └── yibyo-callout-advertising
+    ├── yibyo-bottom-folder
+    └── yibyo-more-link
+```
+
+Note: package art, hills, and other decorative scene elements can live in the background layer when that keeps alignment stable.

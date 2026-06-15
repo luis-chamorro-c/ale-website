@@ -1,0 +1,195 @@
+.brand-design-page {
+  background: var(--cream);
+}
+
+.folder-brand-header {
+  right: 0px;
+  top: 60px;
+}
+
+.folder-brand-header .folder-label-link {
+  right: 50px;
+}
+
+.yibyo-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  padding: 200px 0 3rem;
+}
+
+.yibyo-band {
+  width: 100%;
+  min-height: 52rem;
+  background-color: #504c9f;
+  background-image: url("../../assets/brand-design/yibyo-scene.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 112% auto;
+  overflow: hidden;
+}
+
+.yibyo-band-inner {
+  min-height: 52rem;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(2.25rem, 4vw, 3.5rem) clamp(1.5rem, 4vw, 3.5rem)
+    clamp(2rem, 6vw, 4rem) 43%;
+}
+
+.yibyo-title-block {
+  max-width: 34rem;
+  margin-left: auto;
+  color: #fff8f0;
+  text-align: center;
+}
+
+.yibyo-title-image {
+  display: block;
+  width: min(100%, 31rem);
+  height: auto;
+  margin: 0 auto;
+}
+
+.yibyo-title-block p {
+  margin: 0.3rem 0 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.7rem, 2.5vw, 3rem);
+  line-height: 1.05;
+}
+
+.yibyo-callouts-grid {
+  margin-top: auto;
+  height: 380px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.yibyo-callout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff8f0;
+  text-align: center;
+}
+
+.yibyo-callout-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.yibyo-callout-copy h2,
+.yibyo-callout-copy p {
+  margin: 0;
+}
+
+.yibyo-callout-copy h2 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(2rem, 3.3vw, 3rem);
+  font-weight: 700;
+  line-height: 0.95;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.yibyo-callout-copy p {
+  margin-top: 0.2rem;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1rem, 1.35vw, 1.45rem);
+  line-height: 1.05;
+}
+
+.yibyo-callout-description {
+  align-self: end;
+  flex: 0 1 15rem;
+  padding-right: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.yibyo-callout-description .yibyo-callout-image {
+  max-width: 12.5rem;
+}
+
+.yibyo-callout-description .yibyo-callout-copy {
+  margin-top: -0.35rem;
+}
+
+.yibyo-callout-description .yibyo-callout-copy h2 {
+  font-size: clamp(2.9rem, 4vw, 4rem);
+}
+
+.yibyo-callout-description .yibyo-callout-copy p {
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
+}
+
+.yibyo-callout-packaging {
+  align-self: start;
+  flex: 0 1 10rem;
+  padding-top: 0.6rem;
+}
+
+.yibyo-callout-packaging .yibyo-callout-image {
+  max-width: 9.5rem;
+}
+
+.yibyo-callout-packaging .yibyo-callout-copy h2 {
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+}
+
+.yibyo-callout-packaging .yibyo-callout-copy p {
+  font-size: clamp(0.9rem, 1.05vw, 1.15rem);
+}
+
+.yibyo-callout-advertising {
+  align-self: end;
+  flex: 0 1 12rem;
+  justify-self: center;
+}
+
+.yibyo-callout-advertising .yibyo-callout-image {
+  max-width: 12rem;
+}
+
+.yibyo-callout-guidelines {
+  align-self: start;
+  flex: 0 1 9rem;
+  justify-self: end;
+}
+
+.yibyo-callout-guidelines .yibyo-callout-image {
+  max-width: 8.5rem;
+}
+
+.yibyo-callout-guidelines .yibyo-callout-copy h2 {
+  font-size: clamp(1.8rem, 2.2vw, 2.3rem);
+}
+
+.yibyo-callout-guidelines .yibyo-callout-copy p {
+  font-size: clamp(0.95rem, 1.05vw, 1.12rem);
+}
+
+.yibyo-bottom-folder {
+  width: 100%;
+  height: 14rem;
+  border-radius: 0 1.125rem 1.125rem 1.125rem;
+  background: #d9d6c8;
+  box-shadow: 0 -4px 8px rgb(0 0 0 / 14%);
+}
+
+.yibyo-more-link {
+  align-self: flex-end;
+  margin-top: 1.5rem;
+  margin-right: clamp(0rem, 1vw, 0.75rem);
+  color: var(--blue);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.yibyo-more-link:hover,
+.yibyo-more-link:focus-visible {
+  text-decoration: underline;
+}
