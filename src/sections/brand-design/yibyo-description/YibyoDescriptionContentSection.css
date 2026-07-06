@@ -1,0 +1,30 @@
+.yibyo-description-content-section {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+  width: 100%;
+  min-height: 0;
+  background: #f7f2ec;
+}
+
+.yibyo-description-content-left {
+  display: flex;
+  flex: 3 1 0;
+}
+
+.yibyo-description-content-right {
+  display: flex;
+  flex: 4 1 0;
+  background: #f7f2ec;
+}
+
+@media (max-width: 800px) {
+  .yibyo-description-content-section {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .yibyo-description-content-right {
+    display: block;
+  }
+}

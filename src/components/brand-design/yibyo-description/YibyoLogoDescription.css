@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Gelica";
+  src: url("../../../assets/fonts/Gelica-Regular.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 800;
+}
+
+.yibyo-logo-description {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 0;
+  padding: 3.35rem 3.5rem;
+  background: #f7f2ec;
+}
+
+.yibyo-logo-description p {
+  max-width: 27.2rem;
+  margin: 0;
+  color: #000;
+  font-family: "Gelica", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.yibyo-logo-description-lead {
+  color: #464296;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+@media (max-width: 800px) {
+  .yibyo-logo-description {
+    min-height: 0;
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .yibyo-logo-description p {
+    max-width: none;
+    font-size: 1.12rem;
+  }
+
+  .yibyo-logo-description-lead {
+    font-size: 1.8rem;
+  }
+}

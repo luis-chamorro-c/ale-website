@@ -38,6 +38,7 @@ export default function BrandDesign() {
                   image={yibyoDescriptionMascot}
                   title="Description"
                   subtitle="Get to know the brand."
+                  to="/brand-design/yibyo-description"
                 />
               </div>
               <div className="yibyo-callout-packaging">

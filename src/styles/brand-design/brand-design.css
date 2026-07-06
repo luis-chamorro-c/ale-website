@@ -91,9 +91,18 @@
   font-size: clamp(2rem, 3.3vw, 3rem);
   font-weight: 700;
   line-height: 0.95;
+}
+
+.yibyo-callout-title-link {
+  color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
+}
+
+.yibyo-callout-title-link:hover,
+.yibyo-callout-title-link:focus-visible {
+  text-decoration-thickness: 3px;
 }
 
 .yibyo-callout-copy p {
