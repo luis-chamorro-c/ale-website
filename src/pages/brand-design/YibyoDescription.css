@@ -1,12 +1,22 @@
 .yibyo-description-page {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   background: #f7f2ec;
 }
 
 .yibyo-description-bottom-divider {
-  flex: 0 0 1.125rem;
   width: 100%;
-  background: #464296;
+  height: 1.125rem;
+  background: #D2ACD1;
+}
+
+.yibyo-typography-top-divider {
+  width: 100%;
+  height: 1.125rem;
+  background: #D2ACD1;
+}
+
+.yibyo-typography-bottom-divider {
+  width: 100%;
+  height: clamp(3.75rem, 5vw, 4.45rem);
+  background: #D2ACD1;
 }

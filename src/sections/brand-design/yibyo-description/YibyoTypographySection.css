@@ -1,0 +1,64 @@
+.yibyo-typography-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: 100%;
+  background: #f7f2ec;
+}
+
+.yibyo-typography-panel {
+  min-width: 0;
+  min-height: clamp(13.5rem, 18.5vw, 16.7rem);
+  padding: clamp(2rem, 3.35vw, 2.8rem) clamp(2rem, 6.2vw, 6rem);
+  font-family: "Gelica", "Instrument Serif", Georgia, serif;
+  letter-spacing: 0;
+}
+
+.yibyo-typography-panel h2,
+.yibyo-typography-panel p {
+  margin: 0;
+}
+
+.yibyo-typography-panel h2 {
+  margin-bottom: clamp(0.7rem, 1vw, 1rem);
+  font-size: clamp(2.1rem, 3.8vw, 2.7rem);
+  line-height: 0.95;
+}
+
+.yibyo-typography-panel p {
+  overflow-wrap: anywhere;
+  font-size: clamp(1.6rem, 2.85vw, 2.15rem);
+  line-height: 1.03;
+}
+
+.yibyo-typography-panel-semibold {
+  background: #464296;
+  color: #f7f2ec;
+  font-weight: 800;
+}
+
+.yibyo-typography-panel-regular {
+  border: clamp(0.25rem, 0.4vw, 0.35rem) solid #464296;
+  background: #f7f2ec;
+  color: #464296;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .yibyo-typography-section {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .yibyo-typography-panel {
+    min-height: 0;
+    padding: 1.8rem 1.5rem;
+  }
+
+  .yibyo-typography-panel h2 {
+    font-size: clamp(1.8rem, 8vw, 2.35rem);
+  }
+
+  .yibyo-typography-panel p {
+    font-size: clamp(1.3rem, 6.2vw, 1.75rem);
+  }
+}

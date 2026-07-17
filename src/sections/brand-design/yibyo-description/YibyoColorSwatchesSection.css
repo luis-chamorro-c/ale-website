@@ -1,0 +1,85 @@
+.yibyo-color-swatches-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: 100%;
+  min-height: clamp(12rem, 20vw, 18.1rem);
+  background: #f7f2ec;
+}
+
+.yibyo-color-swatches-group {
+  display: grid;
+  min-width: 0;
+}
+
+.yibyo-color-swatches-primary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.yibyo-color-swatches-secondary {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.yibyo-color-swatch {
+  position: relative;
+  min-width: 0;
+  min-height: clamp(12rem, 20vw, 18.1rem);
+}
+
+.yibyo-color-swatch-strip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 22.5%;
+}
+
+.yibyo-color-swatch-indigo {
+  background: #464296;
+}
+
+.yibyo-color-swatch-cream {
+  background: #f7f2ec;
+}
+
+.yibyo-color-swatch-rose {
+  background: #a2616f;
+}
+
+.yibyo-color-swatch-strip-indigo {
+  background: #5955b5;
+}
+
+.yibyo-color-swatch-strip-cream {
+  background: #ebe1d5;
+}
+
+.yibyo-color-swatch-strip-rose {
+  background: #823d4b;
+}
+
+.yibyo-color-swatch-lilac {
+  background: #d2acd1;
+}
+
+.yibyo-color-swatch-blue {
+  background: #6372aa;
+}
+
+.yibyo-color-swatch-green {
+  background: #98c721;
+}
+
+.yibyo-color-swatch-orange {
+  background: #eda32f;
+}
+
+@media (max-width: 800px) {
+  .yibyo-color-swatches-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .yibyo-color-swatch {
+    min-height: clamp(7.5rem, 26vw, 10rem);
+  }
+}

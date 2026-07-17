@@ -1,0 +1,54 @@
+.yibyo-color-story-section {
+  width: 100%;
+  min-height: clamp(6.25rem, 9.1vw, 8.2rem);
+  padding: clamp(1.55rem, 2vw, 1.7rem) clamp(3.2rem, 6vw, 6.2rem);
+  background: #f7f2ec;
+}
+
+.yibyo-color-story-copy {
+  max-width: 83.6rem;
+  margin: 0;
+  color: #000;
+  font-family: "Gelica", "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.2rem, 1.55vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.yibyo-color-story-word {
+  font-size: clamp(1.9rem, 2.9vw, 2.25rem);
+  line-height: 0.95;
+}
+
+.yibyo-color-story-word-refreshing {
+  color: #464296;
+}
+
+.yibyo-color-story-word-playful {
+  color: #98c721;
+}
+
+.yibyo-color-story-word-healthy {
+  color: #823d4b;
+}
+
+.yibyo-color-story-word-cool {
+  color: #6372aa;
+}
+
+@media (max-width: 800px) {
+  .yibyo-color-story-section {
+    min-height: 0;
+    padding: 1.5rem 1.25rem 1.8rem;
+  }
+
+  .yibyo-color-story-copy {
+    font-size: 1.08rem;
+    line-height: 1.12;
+  }
+
+  .yibyo-color-story-word {
+    font-size: clamp(1.55rem, 8vw, 2rem);
+  }
+}

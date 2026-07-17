@@ -1,9 +1,7 @@
 .yibyo-description-content-section {
   display: flex;
-  flex: 1 1 auto;
   align-items: stretch;
   width: 100%;
-  min-height: 0;
   background: #f7f2ec;
 }
 
@@ -21,7 +19,6 @@
 @media (max-width: 800px) {
   .yibyo-description-content-section {
     display: block;
-    flex: 0 0 auto;
   }
 
   .yibyo-description-content-right {
